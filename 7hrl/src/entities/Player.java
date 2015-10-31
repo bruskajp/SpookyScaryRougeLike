@@ -15,6 +15,7 @@ public class Player extends Entity{
 	public void initilaize() {
 		xCoordinate = 5;
 		yCoordinate = 5;
+		
 		health = 10;
 		displayCharacter = '@';
 		weapon = new Fist();

@@ -67,7 +67,7 @@ public class Board {
 		board[entities.get(index).getxCoordinate()][entities.get(index).getyCoordinate()] = ' ';
 		this.entities.get(index).setxCoordinate(xCoordinate);
 		this.entities.get(index).setyCoordinate(yCoordinate);
-		board[entities.get(index).getxCoordinate()][entities.get(index).getyCoordinate()] = '@';
+		board[entities.get(index).getxCoordinate()][entities.get(index).getyCoordinate()] = entities.get(index).getDisplayCharacter();
 	}
 	
 	public int addItem(Item item){
@@ -83,7 +83,7 @@ public class Board {
 		board[items.get(index).getxCoordinate()][items.get(index).getyCoordinate()] = ' ';
 		this.items.get(index).setxCoordinate(xCoordinate);
 		this.items.get(index).setyCoordinate(yCoordinate);
-		board[items.get(index).getxCoordinate()][items.get(index).getyCoordinate()] = '@';
+		board[items.get(index).getxCoordinate()][items.get(index).getyCoordinate()] = entities.get(index).getDisplayCharacter();
 	}
 
 	public void display(){
